@@ -1,26 +1,43 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * rev_string - reverse a string
- * @s:string
- * Return:void
+ * rev_string - prints a reverse string
+ * @s: A pinter to an int that will be changed
+ * 
+ *Return: void
  */
+
 void rev_string(char *s)
 {
-int i, j;
-char a[500];
-i = 0;
-j = 0;
-while (*(s + i))
+char *start_c, *end_c, c;
+int i, count;
+int length = 0;
+
+for (i = 0; s[i]; i++)
 {
-*(a + i) = *(s + i);
-i++;
+length++i;
 }
-i = i-1;
-while (i >= 0)
+
+count = length;
+
+start_c = s;
+end_c s;
+
+
+for (i = 0; i < count - 1; i++)
 {
-*(s + i) = *(a + j);
-j++;
-i++;
+end_c++;
+}
+
+
+for (i = 0; i < count / 2; i++)
+
+
+c = *end_c;
+*end_c = *start_c;
+*start_c = c;
+
+start_c++i
+end_c--;
 }
 }
